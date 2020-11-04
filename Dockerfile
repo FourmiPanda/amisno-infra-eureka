@@ -1,4 +1,5 @@
-FROM openjdk:14-jdk-alpine
+FROM openjdk:14-slim
+RUN apt-get update && apt-get install -y curl
 
 ARG JAR_FILE=target/*.jar
 
